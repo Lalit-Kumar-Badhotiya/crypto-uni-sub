@@ -3,13 +3,11 @@ const obstacle = document.getElementById('obstacle');
 const scoreDisplay = document.getElementById('score');
 let isJumping = false;
 let score = 0;
-
 document.addEventListener('keydown', (event) => {
     if (event.key === ' ') {
         jump();
     }
 });
-
 function jump() {
     if (isJumping) return;
     isJumping = true;
@@ -32,7 +30,6 @@ function jump() {
         }
     }, 20);
 }
-
 function checkCollision() {
     const dinoBottom = parseInt(window.getComputedStyle(dino).getPropertyValue('bottom'));
     const obstacleLeft = parseInt(window.getComputedStyle(obstacle).getPropertyValue('left'));
@@ -42,11 +39,9 @@ function checkCollision() {
         location.reload();
     }
 }
-
 function updateScore() {
     score += 1;
     scoreDisplay.textContent = 'Score: ' + score;
 }
-
 setInterval(checkCollision, 10);
 setInterval(updateScore, 200);

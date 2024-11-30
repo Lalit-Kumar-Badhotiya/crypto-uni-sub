@@ -1,0 +1,28 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+input[type="text"] {
+  width: 300px;
+  padding: 10px;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+#result {
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#originalHash,
+#generatedHash {
+  word-wrap: break-word;
+  display: block;
+  margin-top: 5px;
+  font-family: monospace;
+  font-size: 14px;
+  white-space: pre-wrap;
+}
