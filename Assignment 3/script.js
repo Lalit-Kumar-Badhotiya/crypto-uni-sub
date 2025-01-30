@@ -14,10 +14,8 @@ async function computeSHA256(input) {
 async function checkHash() {
   const input = document.getElementById("textInput").value;
 
-  // Compute the hash of the predefined text
   const predefinedHash = await computeSHA256(predefinedText);
   
-  // Display the original hash on the page
   document.getElementById("originalHash").textContent = predefinedHash;
 
   // Compute the hash of the input text
