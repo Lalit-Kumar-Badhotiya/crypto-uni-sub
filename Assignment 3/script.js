@@ -18,13 +18,10 @@ async function checkHash() {
   
   document.getElementById("originalHash").textContent = predefinedHash;
 
-  // Compute the hash of the input text
   const inputHash = await computeSHA256(input);
 
-  // Display the generated hash on the page
   document.getElementById("generatedHash").textContent = inputHash;
 
-  // Compare hashes
   const result = document.getElementById("result");
   if (inputHash === predefinedHash) {
     result.textContent = "Hash Matched";
@@ -35,7 +32,6 @@ async function checkHash() {
   }
 }
 
-// Attach event listener to input box
 document.getElementById("textInput").addEventListener("input", checkHash);
 
 // Display the original hash initially
