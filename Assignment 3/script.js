@@ -1,8 +1,7 @@
-// Predefined text and its SHA-256 hash
+
 const name = "Manish";
 const predefinedText = `${name} says hello to blockchain`;
 
-// Function to compute SHA-256 hash
 async function computeSHA256(input) {
   const encoder = new TextEncoder();
   const data = encoder.encode(input);
@@ -11,7 +10,7 @@ async function computeSHA256(input) {
   return hashArray.map(byte => byte.toString(16).padStart(2, "0")).join("");
 }
 
-// Function to check hash and display original/generated hashes
+
 async function checkHash() {
   const input = document.getElementById("textInput").value;
 
