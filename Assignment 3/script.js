@@ -1,4 +1,3 @@
-
 const name = "Manish";
 const predefinedText = `${name} says hello to blockchain`;
 
