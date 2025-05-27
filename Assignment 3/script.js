@@ -33,7 +33,7 @@ async function checkHash() {
 
 document.getElementById("textInput").addEventListener("input", checkHash);
 
-// Display the original hash initially
+
 computeSHA256(predefinedText).then(hash => {
   document.getElementById("originalHash").textContent = hash;
 });
