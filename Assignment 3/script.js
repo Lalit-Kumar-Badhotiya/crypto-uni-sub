@@ -1,4 +1,4 @@
-const name = "Manish";
+const name = "Lalit";
 const predefinedText = `${name} says hello to blockchain`;
 
 async function computeSHA256(input) {
