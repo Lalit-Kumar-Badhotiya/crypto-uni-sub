@@ -1,3 +1,4 @@
+
 const dino = document.getElementById('dino');
 const obstacle = document.getElementById('obstacle');
 const scoreDisplay = document.getElementById('score');
