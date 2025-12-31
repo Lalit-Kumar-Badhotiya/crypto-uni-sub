@@ -1,5 +1,3 @@
-
-
 const name = "Lalit";
 const predefinedText = `${name} says hello to blockchain`;
 
@@ -10,7 +8,6 @@ async function computeSHA256(input) {
   const hashArray = Array.from(new Uint8Array(hashBuffer));
   return hashArray.map(byte => byte.toString(16).padStart(2, "0")).join("");
 }
-
 
 async function checkHash() {
   const input = document.getElementById("textInput").value;
